@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dual Chat Bridge</title>
+  <link rel="stylesheet" href="ui.css" />
+</head>
+<body>
+  <main class="wrap">
+    <h1>Dual Chat Bridge</h1>
+    <p class="hint">先分别打开 ChatGPT 和 Claude 官方网页，再从这里发送统一问题。</p>
+    <textarea id="prompt" placeholder="输入你想同时发给两个模型的话..."></textarea>
+    <div class="row">
+      <button id="send">同时发送</button>
+      <button id="openPanel" class="ghost">打开侧边栏</button>
+    </div>
+    <div id="status" class="status"></div>
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dual Chat Bridge Panel</title>
+  <link rel="stylesheet" href="ui.css" />
+</head>
+<body>
+  <main class="panel simple-panel">
+    <section class="composer">
+      <h1>统一对话框</h1>
+      <p class="hint">把同一句话同时发给 ChatGPT 和 Claude 官方网页。</p>
+
+      <label class="field-label" for="sendHotkey">发送快捷键</label>
+      <select id="sendHotkey" class="select">
+        <option value="enter">Enter 发送 / Ctrl+Enter 换行</option>
+        <option value="ctrlEnter">Ctrl+Enter 发送 / Enter 换行</option>
+      </select>
+
+      <textarea id="prompt" placeholder="输入后会同时发给 ChatGPT 与 Claude"></textarea>
+      <div class="row">
+        <button id="send">同时发送</button>
+      </div>
+      <div id="sendStatus" class="status"></div>
+    </section>
+  </main>
+  <script src="sidepanel.js"></script>
+</body>
+</html>
